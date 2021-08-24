@@ -33,5 +33,5 @@ jobs:
           echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
           echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
           echo ${GITHUB_REF#refs/heads/}
-          #echo $(git rev-parse --short HEAD)
+          echo $(git rev-parse --short HEAD)
           echo "bhuvan"
