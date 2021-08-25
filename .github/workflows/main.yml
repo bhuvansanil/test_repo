@@ -35,6 +35,7 @@ jobs:
           echo "*****************************************************"
           echo ${GITHUB_REF}
           echo ${GITHUB_BASE_REF}
+          echo ${GITHUB_HEAD_REF}
           echo ${CHANGE_BRANCH}
           echo ${BRANCH_NAME}
           echo "*****************************************************"
