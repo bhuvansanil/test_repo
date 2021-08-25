@@ -33,8 +33,9 @@ jobs:
           echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
           echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
           echo "*****************************************************"
-          echo $CHANGE_BRANCH
-          echo $BRANCH_NAME
+          echo ${GITHUB_REF}
+          echo ${CHANGE_BRANCH}
+          echo ${BRANCH_NAME}
           echo "*****************************************************"
           echo ${GITHUB_REF#refs/heads/}
           echo $(git rev-parse --short HEAD)
